@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const susSection = document.querySelector('#sus-section');
     const scoreCounter = document.querySelector('#score-counter');
+    console.log('loadsus')
     loadsus(susSection, scoreCounter);
 
 });

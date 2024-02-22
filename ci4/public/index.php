@@ -9,7 +9,7 @@
 
     <!-- Meta -->
     <title>Yellow Potato</title>
-    <link rel="icon" type="image/x-icon" href="./media/sus.webp">
+    <link rel="icon" type="image/x-icon" href="./media/sus-Yellow.webp">
     
     <!-- File Paths -->
     <link rel="stylesheet" href="./styles/style.css">
