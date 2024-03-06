@@ -1,5 +1,4 @@
 <?php
-echo 'qwe'
 // PHP: Variables
 $score = intval($_GET['score']);
 
