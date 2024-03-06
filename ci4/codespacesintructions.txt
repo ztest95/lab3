@@ -1,0 +1,82 @@
+
+Setup your CI4 website in your virtual machine
+cd /var/www/html/
+git clone (Your lab3github repository)
+
+// in /var/www/html:
+nano .env 
+// create / edit nano required for ci4
+// exit with ctrl X then save by Y
+
+// To fix the intl missing error part 1:
+sudo apt update
+sudo apt install libicu-dev
+sudo docker-php-ext-install intl
+
+// To fix the missing intl error part 2:
+// copy paste each command below to your terminal.
+cd /usr/local/etc/php/
+sudo cp php.ini-development php.ini
+sudo nano php.ini
+php -m | grep intl
+ 
+apache2ctl restart
+
+
+sudo a2enmod rewrite
+apache2ctl restart
+
+mysql -P 3306 -u root -pmariadb
+// set up the ci4tutorial database again 
+// (ref https://www.codeigniter.com/user_guide/tutorial/news_section.html)
+
+
+create database ci4tutorial;
+use ci4tutorial;
+ 
+CREATE TABLE news (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    title VARCHAR(128) NOT NULL,
+    slug VARCHAR(128) NOT NULL,
+    body TEXT NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE slug (slug)
+);
+
+INSERT INTO news VALUES
+(1,'Elvis sighted','elvis-sighted','Elvis was sighted at the Podunk internet cafe. It looked like he was writing a CodeIgniter app.'),
+(2,'Say it isn\'t so!','say-it-isnt-so','Scientists conclude that some programmers have a sense of humor.'),
+(3,'Caffeination, Yes!','caffeination-yes','World\'s largest coffee shop open onsite nested coffee shop for staff only.');
+
+// Then open your .env and edit it to use this configuration:
+
+database.default.hostname = 127.0.0.1
+database.default.database = ci4tutorial
+database.default.username = root
+database.default.password = mariadb
+database.default.DBDriver = MySQLi
+database.default.port = 3306
+
+CREATE TABLE `myguests` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL DEFAULT 'NULL',
+  `website` varchar(30) NOT NULL,
+  `comment` text NOT NULL,
+  `gender` enum('female','male','other') NOT NULL,
+  `reg_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `myguests` (`id`, `name`, `email`, `website`, `comment`, `gender`) VALUES
+(1, 'Juan Delacruz', 'jdelacruz@company.com', 'http://apcwebprog.csf.ph', 'test', 'male');
+
+ALTER TABLE `myguests`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `myguests`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
