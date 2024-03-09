@@ -5,6 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 use App\Controllers\News; 
 use App\Controllers\Pages;
 use App\Controllers\Guests;
+use App\Controllers\Old;
 
 
 /**
@@ -21,6 +22,7 @@ $routes->get('guests/new', [Guests::class, 'new']);
 $routes->post('guests', [Guests::class, 'create']); 
 $routes->get('guests/(:segment)', [Guests::class, 'show']); 
 
+$routes->get('old', [Old::class, 'index']);
 
 $routes->get('/', 'Home::index');
 $routes->get('pages', [Pages::class, 'index']);
