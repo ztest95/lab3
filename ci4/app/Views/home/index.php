@@ -59,40 +59,40 @@
     <section id="hero">
 
         <div id="hero-txt">
-            <span>Faker, the goat</span>
+            <span><?= getenv('name')?> </span>
         </div>
 
     </section>
 
-    <section id="section-about">
+    <section class="section-about">
 
         <div id="about">
             <h1>ABOUT ME.</h1>
 
             <div>
 
-                <div id="about-img-div">
+                <div id="about-image">
                     <div>
                         <div>
-                            <div id="about-img-parent">
-                                <img src="https://images.unsplash.com/photo-1709667642843-12864d3d78e8?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            <div>
+                                <img style="height: 100%" id="logo" src="<?= getenv('aboutimg')?>" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="about-desc">
+                        
                     <div>
                         <h2> STUDENT </h2>
                         <h2> DEVELOPER </h2>
                         <h2> GAMER </h2>
+                        <?= getenv('about'); ?>
                     </div>
+                    
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <div class="cursor" style="position: absolute; pointer-events: none; height: 24px; width: 24px; background-color: #ddbda2; border-radius: 50%; z-index: 5;">
