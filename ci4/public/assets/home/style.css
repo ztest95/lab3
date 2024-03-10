@@ -18,6 +18,20 @@
     src: url('./fonts/NotoSansJP-VariableFont_wght.ttf') format('truetype');
 }
 
+:root {
+    --light-shade: #F0F1F3;
+    --light-accent: #858e91 ;
+    --main-color: #6a6a72;
+    --dark-accent: #5d8593;
+    --dark-shade: #15171A;
+
+    --light-shade-2: #f3f4f4;
+    --light-accent-2: #9ca0ae ;
+    --main-color-2: #9c825d;
+    --dark-accent-2: #8d7e7b;
+    --dark-shade-2: #2c2d36;
+}
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -28,7 +42,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #F4F4F4;
+    background-color: var(--light-shade);
     
 }
 
@@ -153,22 +167,32 @@ nav {
 
     view-timeline-name: --hide-hero;
     view-timeline-axis: block;
-
     animation: linear hide both;
     animation-timeline: --hide-hero;
-
     animation-range: exit 35% exit 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-txt {
+    position: relative;
+    width: 80%;
+    height: 100%;
 }
 
 #hero-txt span {
     position: absolute;
+    width: 100%;
     bottom: 50%;
-    margin: 0 0 0 15%;
+    text-align: center;
     transform: translateY(50%);
     z-index: 1;
-    color: #1e1e1e;
+    color: var(--dark-shade);
     font-size: 8em;
-    font-family: 'Qahiri', sans-serif;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 900;
 }
 
 .hero-circle {
@@ -180,31 +204,32 @@ nav {
     z-index: -2;
     width: 100%;
     height: 90%;
-    background-image: linear-gradient(0deg, #F4F4F4 0%, #EAEAEA 100%);
-    shape-outside: circle(50%);
+    background-image: linear-gradient(0deg, var(--light-shade) 0%, var(--light-accent) 100%);
     clip-path: circle(47vh at 50% 60%);
+    shape-outside: circle(50%);
     transition: opacity 1s ease;
+
+    view-timeline-name: --hide-hero;
+    view-timeline-axis: block;
+    animation: linear hide both;
+    animation-timeline: --hide-hero;
+    animation-range: exit 35% exit 80%;
 }
 
 #circle1 {
-    background-image: linear-gradient(0deg, #F4F4F4 0%, #EAEAEA 100%);
     clip-path: circle(47vh at 50% 60%);
 }
 
 #circle2 {
-    background-image: linear-gradient(0deg, #F4F4F4 0%, #F4F4F4 100%);
+    background-image: linear-gradient(0deg, var(--light-shade) 0%, var(--light-shade) 100%);
     clip-path: circle(45vh at 50% 60%);
 }
 
-#circle3 {
-    background-image: linear-gradient(0deg, #F4F4F4 0%, #EAEAEA 100%);
-    clip-path: circle(40vh at 50% 60%);
-}
 
 
 .section-about {
     position: relative;
-    background-color: #1e1e1e;
+    background-color: var(--dark-shade);
     z-index: 1;
     border-radius: 16px; 
     margin-top: -16px;
@@ -213,7 +238,7 @@ nav {
 }
 
 ::selection {
-    background: #ddbda2;
+    background: var(--main-color)
 }
 
 #about h1, #about h2 {
@@ -250,7 +275,7 @@ nav {
 #about-img-parent {
     width: calc(100% - 2px);
     height: calc(100% - 2px);
-    background-color: #1e1e1e;
+    background-color: var(--dark-shade);
     border-radius: 12px;
     overflow: hidden;
 
