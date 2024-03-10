@@ -71,12 +71,10 @@
 
             <div>
 
-                <div id="about-image">
+                <div id="about-img-div">
                     <div>
-                        <div>
-                            <div>
+                        <div id="about-img-parent">
                                 <img style="height: 100%" id="logo" src="<?= getenv('aboutimg')?>" />
-                            </div>
                         </div>
                     </div>
                 </div>
