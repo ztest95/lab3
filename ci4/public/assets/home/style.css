@@ -71,6 +71,65 @@ section {
 }
 
 
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--dark-shade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s cubic-bezier(.75,.21,.03,.98);
+}
+
+#preloader form {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--light-shade) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.5s ease;;
+}
+
+#preloader p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--light-shade) ;
+
+    opacity: 1;
+    transition: 0.5s ease;;
+}
+
+#preloader p span {
+    min-width: 5em;
+    color: var(--light-brown-accent);
+    border-bottom: 2px solid var(--light-shade);
+
+
+    opacity: 1;
+    transition: 0.5s ease;;
+}
+
+#preloader p input {
+
+    width: 5em;
+    color: var(--light-brown-accent);
+    border-bottom: 2px solid var(--light-shade);
+
+    font-size: 5rem;
+    background-color: var(--dark-shade);
+
+
+    opacity: 1;
+    transition: 0.5s ease;;
+}
+
+
 #footer-start {
     font-family: 'Lato', sans-serif;
     font-size: 10em;

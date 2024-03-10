@@ -11,6 +11,7 @@ class Home extends BaseController
 
     public function home(): string
     {
+        helper('form');
         return view('home/index.php');
     }
 }

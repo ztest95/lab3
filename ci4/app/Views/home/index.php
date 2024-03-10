@@ -9,6 +9,20 @@
 </head>
 <body>
 
+    <div id="preloader">
+
+        <form onsubmit="handleFormSubmit(event)">
+            <!-- <p>Hello, &nbsp<span class="input" id="name" role="textarea" contenteditable>Guest</span> </p> -->
+            <p>Hello, &nbsp
+                <input id="name" type="text">
+            </p>
+
+            <input type="submit" name="submit" value="Go">
+
+        </form>
+        
+    </div>
+
     <nav>
         <div class="nav-item">
             <div class="nav-item-top">
@@ -242,6 +256,17 @@
         </div>
     </section>
 
+    <section id="comments">
+        <form action="<?= base_url('guests') ?>" method="post">
+            <?= csrf_field() ?>
+            <input id="form-name" type="input" name="name" value="" placeholder="">
+            <label for="comment">Comment</label>
+            <textarea name="comment" cols="45" rows="4"><?= set_value('comment') ?></textarea>
+            <br><br>
+            <input type="submit" name="submit" value="Add Guest">
+        </form>
+    </section>
+
 
     
     <footer id="footer">
@@ -268,7 +293,7 @@
                     </li>
                     <li>
                         <a href="<?= getenv('instagram'); ?>" target="_blank">Instagram</a>
-                    </li>
+                    </li> 
                 </ul>
             </section>
         </div>
