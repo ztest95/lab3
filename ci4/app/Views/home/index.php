@@ -79,9 +79,6 @@
         </div>
 
         <div id="hero-accent">
-            <div>
-
-            </div>
             <div id="japan-chars">
                 <div id="div1">
                     <a  value="AUTHENTICITY"> 正 正 堂 堂</a>
@@ -256,17 +253,6 @@
         </div>
     </section>
 
-    <section id="comments">
-        <form action="<?= base_url('guests') ?>" method="post">
-            <?= csrf_field() ?>
-            <input id="form-name" type="input" name="name" value="" placeholder="">
-            <label for="comment">Comment</label>
-            <textarea name="comment" cols="45" rows="4"><?= set_value('comment') ?></textarea>
-            <br><br>
-            <input type="submit" name="submit" value="Add Guest">
-        </form>
-    </section>
-
 
     
     <footer id="footer">
@@ -274,27 +260,52 @@
 
         </div>
         <div id="footer-start">
-            GET IN TOUCH 
+            LET'S GET IN TOUCH
         </div>
         <div id="footer-end">
-            <section>
+            <section class="section-footer">
+                <a id="guests-link" href="./guests"><img id="guests-img" src="https://i.icanvas.com/2012?d=2&sh=h&p=1&bg=g" alt=""></a>
+            </section>
+            <section class="section-footer" id="footer-img">
                 <ul>
                     <header>
-                        Socials
+                        Links
                     </header>
                     <li>
-                        <a href="<?= getenv('linkedin'); ?>" target="_blank">Linked In</a>
+                        <a href="<?= getenv('linkedin')?>" target="_blank">Linked In</a>
                     </li>
                     <li>
-                        <a href="https://www.github.com/ztest95/" target="_blank">Github</a>
+                        <a href="https://github.com/ztest95" target="_blank">Github</a>
                     </li>
                     <li>
-                        <a href="<?= getenv('facebook'); ?>" target="_blank">Facebook</a>
+                        <a href="<?= getenv('facebook')?>" target="_blank">Facebook</a>
                     </li>
                     <li>
-                        <a href="<?= getenv('instagram'); ?>" target="_blank">Instagram</a>
-                    </li> 
+                        <a href="<?= getenv('instagram')?>" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="./old" target="_blank">Old Website</a>
+                    </li>
                 </ul>
+            </section>
+            <section class="section-footer" id="guestform">
+                <form action="<?= base_url('guests') ?>" method="post">
+                 <?= csrf_field() ?>
+                    <ul>
+                        <header>
+                            Guest Form
+                        </header>
+                        <li>
+                            <label for="name">Name</label>
+                            <input id="form-name" type="input" name="name" value="<?= set_value('name') ?>">
+                        </li>
+                        <li>
+                            <label for="comment">Comment</label>
+                            <textarea name="comment" cols="45" rows="4"><?= set_value('comment') ?></textarea>
+                        </li>
+                        <input type="submit" name="submit" value="Add Guest">
+                    </ul>            
+                </form>
             </section>
         </div>
 
