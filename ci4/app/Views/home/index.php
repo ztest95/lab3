@@ -162,7 +162,7 @@
     
     <section id="section-works" style="padding-right: 8%;">
         <div id="works" class="section-head">
-            <h1>WORKS.</h1>
+            <h1>WORKS. <?= getenv('linkedin'); ?></h1>
         </div>
         <div class="section-content">
             <div class="content" style="height: 90svh; position: relative;">
@@ -243,7 +243,7 @@
 
         </div>
         <div id="footer-start">
-            GET IN TOUCH
+            GET IN TOUCH 
         </div>
         <div id="footer-end">
             <section>
@@ -252,16 +252,16 @@
                         Socials
                     </header>
                     <li>
-                        <a href="">Linked In</a>
+                        <a href="<?= getenv('linkedin'); ?>" target="_blank">Linked In</a>
                     </li>
                     <li>
-                        <a href="">Github</a>
+                        <a href="github.com/ztest95" target="_blank">Github</a>
                     </li>
                     <li>
-                        <a href="">Facebook</a>
+                        <a href="<?= getenv('facebook'); ?>" target="_blank">Facebook</a>
                     </li>
                     <li>
-                        <a href="">Instagram</a>
+                        <a href="<?= getenv('instagram'); ?>" target="_blank">Instagram</a>
                     </li>
                 </ul>
             </section>

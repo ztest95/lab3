@@ -11,6 +11,6 @@ class Home extends BaseController
 
     public function home(): string
     {
-        return view('home/index.html');
+        return view('home/index.php');
     }
 }
