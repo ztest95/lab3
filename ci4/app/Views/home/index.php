@@ -70,13 +70,13 @@
             </div>
             <div id="japan-chars">
                 <div id="div1">
-                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                    <a  value="AUTHENTICITY"> 正 正 堂 堂</a>
                 </div>
                 <div id="div2">
-                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                    <a  value="COMPETENCY"> 不 言 実 行 </a>
                 </div>
                 <div id="div3">
-                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                    <a  value="FUN">  生 き が い</a>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <div class="cursor" style="position: absolute; pointer-events: none; height: 24px; width: 24px; background-color: #ddbda2; border-radius: 50%; z-index: 5;">
+    <div class="cursor" style="position: absolute; pointer-events: none; height: 24px; width: 24px; background-color: var(--light-brown-accent); border-radius: 50%; z-index: 5;">
 
     </div>
     
