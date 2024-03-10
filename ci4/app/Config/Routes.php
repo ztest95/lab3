@@ -6,6 +6,7 @@ use App\Controllers\News;
 use App\Controllers\Pages;
 use App\Controllers\Guests;
 use App\Controllers\Old;
+use App\Controllers\Home;
 
 
 /**
@@ -23,6 +24,7 @@ $routes->post('guests', [Guests::class, 'create']);
 $routes->get('guests/(:segment)', [Guests::class, 'show']); 
 
 $routes->get('old', [Old::class, 'index']);
+$routes->get('home', [Home::class, 'home']);
 
 $routes->get('/', 'Home::index');
 $routes->get('pages', [Pages::class, 'index']);
