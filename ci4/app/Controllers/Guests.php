@@ -55,12 +55,11 @@ class Guests extends BaseController
     {
         helper('form');
 
-        $data = $this->request->getPost(['name', 'email', 'website', 'comment', 'gender']);
+        $data = $this->request->getPost(['name', 'comment']);
 
         // Checks whether the submitted data passed the validation rules.
         if (! $this->validateData($data, [
             'name' => 'required|max_length[255]|min_length[3]',
-            'email'  => 'required|max_length[5000]|min_length[10]',
         ])) {
             // The validation fails, so returns the form.
             return $this->new();
@@ -71,16 +70,13 @@ class Guests extends BaseController
         // but looks like this does not return other fields like website, comment, gender, only those that are validated
 
         // so i just take the original
-        $post = $this->request->getPost(['name', 'email', 'website', 'comment', 'gender']);
+        $post = $this->request->getPost(['name', 'comment']);
     
         $model = model(GuestModel::class);
 
         $model->save([
             'name'  => url_title($post['name'], '-', true),
-            'email' => $post['email'],
-            'website'  => $post['website'],
-            'comment'  => $post['comment'],
-            'gender' => $post['gender']
+            'comment'  => $post['comment']
         ]);
 
         return view('templates/header', ['title' => 'Create a guests item'])
