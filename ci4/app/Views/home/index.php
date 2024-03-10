@@ -58,9 +58,30 @@
 
     <section id="hero">
 
-        <div id="hero-txt">
-            <span><?= getenv('name')?> </span>
+        <div id="hero-main">
+            <div id="hero-txt">
+                <span><?= getenv('name')?> </span>
+            </div>
         </div>
+
+        <div id="hero-accent">
+            <div>
+
+            </div>
+            <div id="japan-chars">
+                <div id="div1">
+                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                </div>
+                <div id="div2">
+                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                </div>
+                <div id="div3">
+                    <a href="" value="ABOUT"> リ ン クリ ン ク</a>
+                </div>
+            </div>
+        </div>
+
+
 
     </section>
 

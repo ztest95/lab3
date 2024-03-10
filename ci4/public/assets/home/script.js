@@ -1,7 +1,9 @@
 window.addEventListener('scroll', function() {
     var parallaxheader = document.querySelector('#hero-txt span');
+    var JapanChars = document.querySelector('#japan-chars');
     var scrollPosition = window.pageYOffset;
-    parallaxheader.style.transform = 'translateY(' + scrollPosition * .8 + 'px)'; 
+    parallaxheader.style.transform = 'translateY(' + scrollPosition * .1 + 'px)'; 
+    JapanChars.style.transform = 'translateY(' + scrollPosition * .6 + 'px)'; 
 
     var navItems = document.querySelectorAll('.nav-item-top a');
     var navCircle = document.querySelectorAll('.nav-circle');
