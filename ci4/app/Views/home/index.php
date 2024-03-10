@@ -62,19 +62,6 @@
             <span>Faker, the goat</span>
         </div>
 
-        <div id="hero-bg">
-            <div id="circle1" class="hero-circle">
-            
-            </div>
-    
-            <div id="circle2" class="hero-circle">
-                
-            </div>
-    
-            <div id="circle3" class="hero-circle">
-                
-            </div>
-        </div>
     </section>
 
     <section id="section-about">
@@ -162,7 +149,7 @@
     
     <section id="section-works" style="padding-right: 8%;">
         <div id="works" class="section-head">
-            <h1>WORKS. <?= getenv('linkedin'); ?></h1>
+            <h1>WORKS. </h1>
         </div>
         <div class="section-content">
             <div class="content" style="height: 90svh; position: relative;">
@@ -255,7 +242,7 @@
                         <a href="<?= getenv('linkedin'); ?>" target="_blank">Linked In</a>
                     </li>
                     <li>
-                        <a href="github.com/ztest95" target="_blank">Github</a>
+                        <a href="https://www.github.com/ztest95/" target="_blank">Github</a>
                     </li>
                     <li>
                         <a href="<?= getenv('facebook'); ?>" target="_blank">Facebook</a>
@@ -268,6 +255,20 @@
         </div>
 
     </footer>
+
+    <div id="hero-bg">
+            <div id="circle1" class="hero-circle">
+            
+            </div>
+    
+            <div id="circle2" class="hero-circle">
+                
+            </div>
+    
+            <div id="circle3" class="hero-circle">
+                
+            </div>
+        </div>
 
 </body>
 
