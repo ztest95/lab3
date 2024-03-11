@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./styles/style2.css">
+<link rel="stylesheet" href="./assets/home/style.css">
 <style>
     section {
         margin: 4%;

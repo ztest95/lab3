@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forpolfio v2</title>
 
     <link rel="stylesheet" href="./assets/home/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/old/media/sus-Yellow.webp">
 </head>
 <body>
 
@@ -13,11 +14,9 @@
 
         <form onsubmit="handleFormSubmit(event)">
             <!-- <p>Hello, &nbsp<span class="input" id="name" role="textarea" contenteditable>Guest</span> </p> -->
-            <p>Hello, &nbsp
-                <input id="name" type="text">
-            </p>
+            <p>Hello, Welcome
 
-            <input type="submit" name="submit" value="Go">
+            </p>
 
         </form>
         
@@ -209,7 +208,7 @@
                         <div class="content-top" style="border-top: 1px solid #1e1e1e; display: flex; justify-content: flex-start; padding: 4svw; height: 100%; overflow:hidden;">
                             <div style=" width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;">
                                 <img class="non-hover-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E6%B7%B1%E5%B7%9D%E4%B8%87%E5%B9%B4%E6%A9%8B%E4%B8%8B-Under_the_Mannen_Bridge_at_Fukagawa_%28Fukagawa_Mannenbashi_shita%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141017.jpg/1920px-thumbnail.jpg" alt="" srcset="" style="width: 102%;">
-                                <img class="hover-img" src="https://images.unsplash.com/photo-1616469829167-0bd76a80c913?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 102%;">
+                                <img class="hover-img" src="https://images.unsplash.com/photo-1614680376739-414d95ff43df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 102%;">
                             </div>
                         </div>
                     </div>
@@ -232,7 +231,7 @@
                         <div class="content-top" style="border-top: 1px solid #1e1e1e; display: flex; justify-content: flex-start; padding: 4svw; height: 100%; overflow:hidden;">
                             <div style=" width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;">
                                 <img class="non-hover-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E7%94%B2%E5%B7%9E%E7%8A%AC%E7%9B%AE%E5%B3%A0-The_Inume_Pass_in_Kai_Province_%28K%C5%8Dsh%C5%AB_Inume_t%C5%8Dge%29%2C_from_the_series_Thirty-six_Views_of_Mount_Fuji_%28Fugaku_sanj%C5%ABrokkei%29_MET_DP141045.jpg/1280px-thumbnail.jpg" alt="" srcset="" style="width: 102%;">
-                                <img class="hover-img" src="https://images.unsplash.com/photo-1616469829167-0bd76a80c913?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 102%;">
+                                <img class="hover-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 102%;">
                             </div>
                         </div>
                     </div>
@@ -293,7 +292,7 @@
                  <?= csrf_field() ?>
                     <ul>
                         <header>
-                            Guest Form
+                            Comment Form
                         </header>
                         <li>
                             <label for="name">Name</label>

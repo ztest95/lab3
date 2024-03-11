@@ -63,22 +63,30 @@ cursorin.addEventListener('mouseleave', function() {
 });
 
 var name = 'Guest'
-function handleFormSubmit(event) {
-    event.preventDefault();
+// function handleFormSubmit(event) {
+//     event.preventDefault();
 
-    var name = document.getElementById('name').value;
-    var formname = document.querySelector('#form-name');
-    formname.placeholder = name;
+//     var name = document.getElementById('name').value;
+//     var formname = document.querySelector('#form-name');
+//     formname.placeholder = name;
 
-    var preloader = document.querySelector('#preloader');
-    window.scroll(0, 0);
-    setTimeout(function() {
-        preloader.style.transform = 'translateY(-100%)';
-    }, 500);
-}
+//     var preloader = document.querySelector('#preloader');
+//     window.scroll(0, 0);
+//     setTimeout(function() {
+//         preloader.style.transform = 'translateY(-100%)';
+//     }, 500);
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
     var form = document.querySelector('#preloader form');
-    form.style.opacity = 1;
-    console.log('qwe');
+    setTimeout(function() {
+        form.style.opacity = 1;
+    }, 1000);
+    
+    setTimeout(function() {
+    }, 1000);
+    window.scroll(0, 0);
+    setTimeout(function() {
+        preloader.style.transform = 'translateY(-100%)';
+    }, 2000);
 });
