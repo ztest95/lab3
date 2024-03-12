@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../assets/home/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/old/media/sus-Yellow.webp">
+    <script src="../assets/home/script.js"></script>
 </head>
 <body>
 
@@ -334,5 +335,5 @@
 
 </body>
 
-<script src="../assets/home/script.js"></script>
+
 </html> 

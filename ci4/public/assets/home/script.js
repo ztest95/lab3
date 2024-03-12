@@ -1,49 +1,66 @@
-window.addEventListener('scroll', function() {
-    var parallaxheader = document.querySelector('#hero-txt span');
-    var JapanChars = document.querySelector('#japan-chars');
-    var scrollPosition = window.pageYOffset;
-    parallaxheader.style.transform = 'translateY(' + scrollPosition * .1 + 'px)'; 
-    JapanChars.style.transform = 'translateY(' + scrollPosition * .6 + 'px)'; 
 
-    var navItems = document.querySelectorAll('.nav-item-top a');
-    var navCircle = document.querySelectorAll('.nav-circle');
-    var navJapan = document.querySelectorAll('.nav-item p');
-    var navEng = document.querySelectorAll('.nav-eng')
-    var nav = document.querySelector('nav');
-    if (scrollPosition > 400) {
-        navItems.forEach(function(item) {
-            item.style.opacity = '0';
-        })
-        navCircle.forEach(function(item) {
-            item.style.backgroundColor = '#ddbda2';
-        })
-        navJapan.forEach(function(item) {
-            item.style.opacity = '1';
-        })
-    } else {
-        navItems.forEach(function(item) {
-            item.style.opacity = '1';
-        })
-        navCircle.forEach(function(item) {
-            item.style.backgroundColor = '#1e1e1e';
-        })
-        navJapan.forEach(function(item) {
-            item.style.opacity = '0';
-        })
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    var form = document.querySelector('#preloader form');
+    setTimeout(function() {
+        form.style.opacity = 1;
+    }, 1000);
+    
+    setTimeout(function() {
+    }, 1000);
+    window.scroll(0, 0);
+    setTimeout(function() {
+        preloader.style.transform = 'translateY(-100%)';
+    }, 2000);
 
-    if (scrollPosition > 1000) {
-        navEng.forEach(function(item) {
-            item.style.display = 'none';
-        })
-    }
+    window.addEventListener('scroll', function() {
+        var parallaxheader = document.querySelector('#hero-txt span');
+        var JapanChars = document.querySelector('#japan-chars');
+        var scrollPosition = window.pageYOffset;
+        parallaxheader.style.transform = 'translateY(' + scrollPosition * .1 + 'px)'; 
+        JapanChars.style.transform = 'translateY(' + scrollPosition * .6 + 'px)'; 
+    
+        var navItems = document.querySelectorAll('.nav-item-top a');
+        var navCircle = document.querySelectorAll('.nav-circle');
+        var navJapan = document.querySelectorAll('.nav-item p');
+        var navEng = document.querySelectorAll('.nav-eng')
+        var nav = document.querySelector('nav');
+        if (scrollPosition > 400) {
+            navItems.forEach(function(item) {
+                item.style.opacity = '0';
+            })
+            navCircle.forEach(function(item) {
+                item.style.backgroundColor = '#ddbda2';
+            })
+            navJapan.forEach(function(item) {
+                item.style.opacity = '1';
+            })
+        } else {
+            navItems.forEach(function(item) {
+                item.style.opacity = '1';
+            })
+            navCircle.forEach(function(item) {
+                item.style.backgroundColor = '#1e1e1e';
+            })
+            navJapan.forEach(function(item) {
+                item.style.opacity = '0';
+            })
+        }
+    
+        if (scrollPosition > 1000) {
+            navEng.forEach(function(item) {
+                item.style.display = 'none';
+            })
+        }
+    
+    });
+    
+    var cursor = document.querySelector('.cursor');
 
+    
 });
 
-var cursor = document.querySelector('.cursor');
-
 window.addEventListener('mousemove', function(e) {
-
+    
     cursor.style.left = e.pageX - (cursor.offsetWidth/ 2) + 'px';
     cursor.style.top = e.pageY - (cursor.offsetHeight / 2) +'px';
 
@@ -65,17 +82,3 @@ cursorin.addEventListener('mouseleave', function() {
 var name = 'Guest'
 
 console.log('qwe')
-
-document.addEventListener("DOMContentLoaded", function() {
-    var form = document.querySelector('#preloader form');
-    setTimeout(function() {
-        form.style.opacity = 1;
-    }, 1000);
-    
-    setTimeout(function() {
-    }, 1000);
-    window.scroll(0, 0);
-    setTimeout(function() {
-        preloader.style.transform = 'translateY(-100%)';
-    }, 2000);
-});
