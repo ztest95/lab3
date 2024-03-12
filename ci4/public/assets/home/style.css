@@ -374,6 +374,15 @@ justify-self: start;}
     left: 50%;
 }
 
+@media screen and (max-width: 1000px){
+    #about-img-div {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        left: 0;
+    }
+}
+
 #about-img-div > div {
     position: sticky;
     top: 15vh;
