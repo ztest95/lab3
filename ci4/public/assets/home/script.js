@@ -63,19 +63,8 @@ cursorin.addEventListener('mouseleave', function() {
 });
 
 var name = 'Guest'
-// function handleFormSubmit(event) {
-//     event.preventDefault();
 
-//     var name = document.getElementById('name').value;
-//     var formname = document.querySelector('#form-name');
-//     formname.placeholder = name;
-
-//     var preloader = document.querySelector('#preloader');
-//     window.scroll(0, 0);
-//     setTimeout(function() {
-//         preloader.style.transform = 'translateY(-100%)';
-//     }, 500);
-// }
+console.log('qwe')
 
 document.addEventListener("DOMContentLoaded", function() {
     var form = document.querySelector('#preloader form');

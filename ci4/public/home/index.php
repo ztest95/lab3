@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forpolfio v2</title>
 
-    <link rel="stylesheet" href="./assets/home/style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/old/media/sus-Yellow.webp">
+    <link rel="stylesheet" href="../assets/home/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/old/media/sus-Yellow.webp">
 </head>
 <body>
 
@@ -73,7 +73,7 @@
 
         <div id="hero-main">
             <div id="hero-txt">
-                <span><?= getenv('name')?> </span>
+                <span> Miles the Immorales</span>
             </div>
         </div>
 
@@ -105,7 +105,7 @@
                 <div id="about-img-div">
                     <div>
                         <div id="about-img-parent">
-                                <img style="height: 100%" id="logo" src="<?= getenv('aboutimg')?>" />
+                                <img style="height: 100%" id="logo" src="../assets/home/media/miles-morales.jpg" />
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,8 @@
                         <h2> STUDENT </h2>
                         <h2> DEVELOPER </h2>
                         <h2> GAMER </h2>
-                        <?= getenv('about'); ?>
+                        <p>Hi, I'm ztest95 disguising as Miles the Immorales</p>
+                        
                     </div>
                     
                 </div>
@@ -271,22 +272,29 @@
                         Links
                     </header>
                     <li>
-                        <a href="<?= getenv('linkedin')?>" target="_blank">Linked In</a>
+                        <a href="" target="_blank" class="disabled">Linked In</a>
                     </li>
                     <li>
                         <a href="https://github.com/ztest95" target="_blank">Github</a>
                     </li>
                     <li>
-                        <a href="<?= getenv('facebook')?>" target="_blank">Facebook</a>
+                        <a href="" target="_blank" class="disabled">Facebook</a>
                     </li>
                     <li>
-                        <a href="<?= getenv('instagram')?>" target="_blank">Instagram</a>
+                        <a href="" target="_blank" class="disabled"> Instagram</a>
                     </li>
                     <li>
                         <a href="./old" target="_blank">Old Website</a>
                     </li>
                 </ul>
             </section>
+            <style>
+                a.disabled {
+                    opacity: 50%;
+                    cursor: default;
+                    pointer-events: none;
+                }
+            </style>
             <section class="section-footer" id="guestform">
                 <form action="<?= base_url('guests') ?>" method="post">
                  <?= csrf_field() ?>
@@ -326,5 +334,5 @@
 
 </body>
 
-<script src="./assets/home/script.js"></script>
+<script src="../assets/home/script.js"></script>
 </html> 
