@@ -254,8 +254,20 @@
         </div>
     </section>
 
+    <div id="hero-bg">
+        <div id="circle1" class="hero-circle">
+        
+        </div>
 
-    
+        <div id="circle2" class="hero-circle">
+            
+        </div>
+
+        <div id="circle3" class="hero-circle">
+            
+        </div>
+    </div>
+
     <footer id="footer">
         <div id="contact">
 
@@ -319,19 +331,6 @@
 
     </footer>
 
-    <div id="hero-bg">
-            <div id="circle1" class="hero-circle">
-            
-            </div>
-    
-            <div id="circle2" class="hero-circle">
-                
-            </div>
-    
-            <div id="circle3" class="hero-circle">
-                
-            </div>
-        </div>
 
 </body>
 
