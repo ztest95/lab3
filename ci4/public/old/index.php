@@ -9,19 +9,19 @@
 
     <!-- Meta -->
     <title>Yellow Potato</title>
-    <link rel="icon" type="image/x-icon" href="assets/old/media/sus-Yellow.webp">
+    <link rel="icon" type="image/x-icon" href="../assets/old/media/sus-Yellow.webp">
     
     <!-- File Paths -->
-    <link rel="stylesheet" href="assets/old/style.css">
+    <link rel="stylesheet" href="../assets/old/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <script type="module" src="assets/old/script.js"></script>
+    <script type="module" src="../assets/old/script.js"></script>
 </head>
 <!-- Home, Introduction, Editors, Basic, Comment -->
 <body id="home">
 
     <header id="header" class="hero">
         <div id="header-left">
-            <img id="logo" src="assets/old/media/head.png" />
+            <img id="logo" src="../assets/old/media/head.png" />
         </div>
 
         <div id="header-right">
@@ -186,14 +186,14 @@
     <section class="col" id="amogus">
         <!-- Images -->
         <p style="text-align: center;">click me!</p>
-        <img src="assets/old/media/sus-Yellow.webp" alt="Amogus Yellow" id="img-amogus">
+        <img src="../assets/old/media/sus-Yellow.webp" alt="Amogus Yellow" id="img-amogus">
         <!-- https://among-us.fandom.com/wiki/Yellow -->
     </section>
 
     <section id="sus-section" style="display: flex">
-        <img class="sus" src="assets/old/media/sus-Yellow.webp" alt="Amogus Yellow" id="img-amogus-yellow">
-        <img class="sus" src="assets/old/media/sus-Cyan.webp" alt="Amogus Yellow" id="img-amogus-cyan">
-        <img class="sus" src="assets/old/media/sus-Lime.webp" alt="Amogus Yellow" id="img-amogus-lime">
+        <img class="sus" src="../assets/old/media/sus-Yellow.webp" alt="Amogus Yellow" id="img-amogus-yellow">
+        <img class="sus" src="../assets/old/media/sus-Cyan.webp" alt="Amogus Yellow" id="img-amogus-cyan">
+        <img class="sus" src="../assets/old/media/sus-Lime.webp" alt="Amogus Yellow" id="img-amogus-lime">
     </section>
     <div style='display: flex; justify-content: center;' >
         <h1>Score: </h1><h1 id='score-counter' style="text-alignment: center;"></h1>
