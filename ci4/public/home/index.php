@@ -297,7 +297,7 @@
                         <a href="" target="_blank" class="disabled"> Instagram</a>
                     </li>
                     <li>
-                        <a href="./old" target="_blank">Old Website</a>
+                        <a href="../old/" target="_blank">Old Website</a>
                     </li>
                 </ul>
             </section>
