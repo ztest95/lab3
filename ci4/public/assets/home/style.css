@@ -374,6 +374,7 @@ justify-self: start;}
     left: 50%;
 }
 
+
 @media screen and (max-width: 1000px){
     #about-img-div {
         width: 100%;
