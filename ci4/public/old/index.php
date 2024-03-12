@@ -196,7 +196,7 @@
         <img class="sus" src="../assets/old/media/sus-Lime.webp" alt="Amogus Yellow" id="img-amogus-lime">
     </section>
     <div style='display: flex; justify-content: center;' >
-        <h1>Score: </h1><h1 id='score-counter' style="text-alignment: center;"></h1>
+        <h1>Score: </h1><h1 id='score-counter' style="text-align: center;"></h1>
     </div>
 
     <div id="up-arrow">
