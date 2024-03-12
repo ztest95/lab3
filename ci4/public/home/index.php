@@ -277,7 +277,7 @@
         </div>
         <div id="footer-end">
             <section class="section-footer">
-                <a id="guests-link" href="./guests"><img id="guests-img" src="https://i.icanvas.com/2012?d=2&sh=h&p=1&bg=g" alt=""></a>
+                <img id="guests-img" src="https://i.icanvas.com/2012?d=2&sh=h&p=1&bg=g" alt="">
             </section>
             <section class="section-footer" id="footer-img">
                 <ul>
@@ -308,25 +308,7 @@
                     pointer-events: none;
                 }
             </style>
-            <section class="section-footer" id="guestform">
-                <form action="<?= base_url('guests') ?>" method="post">
-                 <?= csrf_field() ?>
-                    <ul>
-                        <header>
-                            Comment Form
-                        </header>
-                        <li>
-                            <label for="name">Name</label>
-                            <input id="form-name" type="input" name="name" value="<?= set_value('name') ?>">
-                        </li>
-                        <li>
-                            <label for="comment">Comment</label>
-                            <textarea name="comment" cols="45" rows="4"><?= set_value('comment') ?></textarea>
-                        </li>
-                        <input type="submit" name="submit" value="Add Guest">
-                    </ul>            
-                </form>
-            </section>
+
         </div>
 
     </footer>
